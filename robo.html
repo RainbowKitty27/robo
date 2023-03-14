@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js">
+
+    </script>
+</head>
+<body>
+    <a-entity position="0 0 15">
+       <a-camera></a-camera>
+    </a-entity>
+    
+    <a-scene background="color: black">
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-sphere position="0 3.5 5" color="#FFDBAC" rotation="0"></a-sphere>
+            <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: position; from:-0.5 3.5 4;to: 0 2 4;dir:alternate;loop:true;dur:1000">
+            <a-sphere position="-0.5 3.5 4" color="black" radius="0.15" ></a-sphere>
+  </a-entity>
+
+  <a-sphere position="0.5 3.5 4" color="black" radius="0.15" animation="property: position; from: 0.5 3.5 4;to: 0 2 4;dir:alternate;loop:true;dur:1000"></a-sphere>
+  <a-entity position="0 0 0" rotation="0 0 0"
+  animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 20000">
+  <a-sphere position="1  0 -5" radius="0.2" src="https://cdn.glitch.com/850dd813-e5e9-4dd0-9751-38981ae74172%2Fmercurio.jpg?v=1604298142259"></a-sphere>  
+</a-entity>
+    <a-box position="0 2 5" color="#65FE08" rotation="0"></a-box>
+    <a-box position="0 1.5 5" color="#65FE08" rotation="0"></a-box>
+    <a-box position="0 1 5" color="#65FE08" rotation="0"></a-box>
+    <a-box position="-1 1.5 5" color="blue" rotation="90"></a-box>
+    <a-box position="1 1.5 5" color="blue" rotation="90"></a-box> 
+    <a-box position="-2 1.5 5" color="blue" rotation="90"></a-box>
+    <a-box position="2 1.5 5" color="blue" rotation="90"></a-box> 
+    <a-box position="0 0 5" color="blue" rotation="90"></a-box>
+    <a-box position="-1 -0.5 5" color="blue" rotation="90"></a-box> 
+    <a-box position="1 -0.5 5" color="blue" rotation="-90"></a-box>
+    <a-box position="1.5 -1 5" color="blue" rotation="90"></a-box>
+    <a-box position="-1.5 -1 5" color="blue" rotation="90"></a-box> 
+        </a-entity>
+    </a-scene>
+</body>
+</html>
